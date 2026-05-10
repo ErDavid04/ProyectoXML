@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE test [
+  <!ELEMENT test (question+)>
+  <!ELEMENT question (wording,choices)>
+  <!ELEMENT wording (#PCDATA)>
+  <!ELEMENT choices (choice+)>
+  <!ELEMENT choice (#PCDATA)>
+  <!ATTLIST question id CDATA #REQUIRED>
+  <!ATTLIST choice correct (yes|no) "no">
+]>
+
+<test>
+  <question id="1">
+    <wording>Who is known as "La Pulga"?</wording>
+    <choices>
+      <choice correct="yes">Lionel Messi</choice>
+      <choice>Cristiano Ronaldo</choice>
+      <choice>Ronaldinho</choice>
+      <choice>Mbappé</choice>
+    </choices>
+  </question>
+  <question id="2">
+    <wording>Which player has won the most Ballon d'Or awards?</wording>
+    <choices>
+      <choice correct="yes">Lionel Messi</choice>
+      <choice>Cristiano Ronaldo</choice>
+      <choice>Michel Platini</choice>
+      <choice>Luka Modrić</choice>
+    </choices>
+  </question>
+  <question id="3">
+    <wording>What is Neymar's nationality?</wording>
+    <choices>
+      <choice correct="yes">Brazilian</choice>
+      <choice>Spanish</choice>
+      <choice>Portuguese</choice>
+      <choice>French</choice>
+    </choices>
+  </question>
+  <question id="4">
+    <wording>Which club did Pelé play for most of his career?</wording>
+    <choices>
+      <choice correct="yes">Santos</choice>
+      <choice>Flamengo</choice>
+      <choice>Boca Juniors</choice>
+      <choice>Real Madrid</choice>
+    </choices>
+  </question>
+  <question id="5">
+    <wording>Who scored the "Hand of God" goal?</wording>
+    <choices>
+      <choice correct="yes">Diego Maradona</choice>
+      <choice>Leo Messi</choice>
+      <choice>Ronaldinho</choice>
+      <choice>Pelé</choice>
+    </choices>
+  </question>
+  <question id="6">
+    <wording>Which European club has the most Champions League titles?</wording>
+    <choices>
+      <choice correct="yes">Real Madrid</choice>
+      <choice>FC Barcelona</choice>
+      <choice>AC Milan</choice>
+      <choice>Manchester United</choice>
+    </choices>
+  </question>
+  <question id="7">
+    <wording>Who was Spain's captain in the 2010 World Cup?</wording>
+    <choices>
+      <choice correct="yes">Iker Casillas</choice>
+      <choice>Sergio Ramos</choice>
+      <choice>Xavi Hernández</choice>
+      <choice>Puyol</choice>
+    </choices>
+  </question>
+  <question id="8">
+    <wording>What is Cristiano Ronaldo's nickname?</wording>
+    <choices>
+      <choice correct="yes">CR7</choice>
+      <choice>C-Ro</choice>
+      <choice>Rocket</choice>
+      <choice>Golden Boy</choice>
+    </choices>
+  </question>
+  <question id="9">
+    <wording>Which country is Erling Haaland from?</wording>
+    <choices>
+      <choice correct="yes">Norway</choice>
+      <choice>Denmark</choice>
+      <choice>Germany</choice>
+      <choice>Netherlands</choice>
+    </choices>
+  </question>
+  <question id="10">
+    <wording>What was Leo Messi’s first club?</wording>
+    <choices>
+      <choice correct="yes">Newell's Old Boys</choice>
+      <choice>FC Barcelona</choice>
+      <choice>Boca Juniors</choice>
+      <choice>River Plate</choice>
+    </choices>
+  </question>
+  <question id="11">
+    <wording>Which player is famous for celebrating with his tongue out?</wording>
+    <choices>
+      <choice correct="yes">Ronaldinho</choice>
+      <choice>Ronaldo Nazário</choice>
+      <choice>Zlatan Ibrahimović</choice>
+      <choice>Mbappé</choice>
+    </choices>
+  </question>
+  <question id="12">
+    <wording>Who scored the winning goal in the 2014 World Cup final?</wording>
+    <choices>
+      <choice correct="yes">Mario Götze</choice>
+      <choice>Thomas Müller</choice>
+      <choice>Messi</choice>
+      <choice>Ozil</choice>
+    </choices>
+  </question>
+  <question id="13">
+    <wording>Which country won the 1998 World Cup?</wording>
+    <choices>
+      <choice correct="yes">France</choice>
+      <choice>Germany</choice>
+      <choice>Brazil</choice>
+      <choice>Italy</choice>
+    </choices>
+  </question>
+  <question id="14">
+    <wording>Who was known as "El Fenómeno"?</wording>
+    <choices>
+      <choice correct="yes">Ronaldo Nazário</choice>
+      <choice>Zidane</choice>
+      <choice>Ronaldinho</choice>
+      <choice>Messi</choice>
+    </choices>
+  </question>
+  <question id="15">
+    <wording>Which player celebrated a goal showing a shirt with "Why always me?"</wording>
+    <choices>
+      <choice correct="yes">Mario Balotelli</choice>
+      <choice>Messi</choice>
+      <choice>Griezmann</choice>
+      <choice>Cavani</choice>
+    </choices>
+  </question>
+  <question id="16">
+    <wording>Who holds the record for most goals in a World Cup?</wording>
+    <choices>
+      <choice correct="yes">Miroslav Klose</choice>
+      <choice>Pelé</choice>
+      <choice>Ronaldo</choice>
+      <choice>Messi</choice>
+    </choices>
+  </question>
+  <question id="17">
+    <wording>Which jersey number did Zidane wear at Real Madrid?</wording>
+    <choices>
+      <choice correct="yes">5</choice>
+      <choice>10</choice>
+      <choice>7</choice>
+      <choice>8</choice>
+    </choices>
+  </question>
+  <question id="18">
+    <wording>Which player won both the World Cup and Champions League in 1998?</wording>
+    <choices>
+      <choice correct="yes">Zinedine Zidane</choice>
+      <choice>Del Piero</choice>
+      <choice>Henry</choice>
+      <choice>Beckham</choice>
+    </choices>
+  </question>
+  <question id="19">
+    <wording>Which team does Mbappé currently play?</wording>
+    <choices>
+      <choice correct="yes">Real Madrid</choice>
+      <choice>Paris Saint-Germain</choice>
+      <choice>Manchester City</choice>
+      <choice>Juventus</choice>
+    </choices>
+  </question>
+  <question id="20">
+    <wording>Which country won the 2022 World Cup?</wording>
+    <choices>
+      <choice correct="yes">Argentina</choice>
+      <choice>France</choice>
+      <choice>Brazil</choice>
+      <choice>Germany</choice>
+    </choices>
+  </question>
+</test>

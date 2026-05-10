@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: url('https://4kwallpapers.com/images/wallpapers/camp-nou-fc-5120x2880-19436.jpg') repeat, #e8f5e9;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #43a047;
+}
+
+h1 {
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.language-selector button {
+    padding: 8px 16px;
+    background-color: #c8e6c9;
+    border: 1px solid #81c784;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-selector button.active {
+    background-color: #388e3c;
+    color: white;
+    border-color: #2e7d32;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8f5e9;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    border: 1px solid #c8e6c9;
+}
+
+.timer, .score, .progress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#question-number {
+    font-weight: bold;
+    color: #43a047;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice {
+    padding: 12px 18px;
+    background-color: #f1f8e9;
+    border: 1px solid #c5e1a5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choice:hover {
+    background-color: #dcedc8;
+}
+
+.choice.selected {
+    background-color: #81c784;
+    color: white;
+    border-color: #66bb6a;
+}
+
+.choice.correct {
+    background-color: #43a047;
+    color: white;
+    border-color: #388e3c;
+}
+
+.choice.incorrect {
+    background-color: #e53935;
+    color: white;
+    border-color: #c62828;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#submit-btn {
+    background-color: #ff3838;
+}
+
+#submit-btn:hover {
+    background-color: #a30000;
+}
+
+.results {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#results-title {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#results-score, #results-time {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.result-item {
+    padding: 10px;
+    border-left: 4px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.result-item.correct {
+    border-left-color: #43a047;
+}
+
+.result-item.incorrect {
+    border-left-color: #e53935;
+}
+
+#start-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    background-color: #ffb300;
+}
+
+#restart-btn:hover {
+    background-color: #ffa000;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #c8e6c9;
+    color: #607d8b;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .info-panel {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
