@@ -1,6 +1,6 @@
 # ProyectoXML
 
-Este proyecto es un cuestionario interactivo bilingüe (Español / Inglés) que permite a los usuarios evaluar sus conocimientos sobre XML y DTD mediante preguntas de opción múltiple.
+Este proyecto es un cuestionario interactivo bilingüe (Español / Inglés) que permite a los usuarios evaluar sus conocimientos sobre fútbol mediante preguntas de opción múltiple.
 
 ## Características
 
@@ -9,9 +9,9 @@ Este proyecto es un cuestionario interactivo bilingüe (Español / Inglés) que 
 - Temporizador integrado
 - Puntuación automática
 
-## Ver en línea
+## Ver la web
 
-[https://davidgs04.github.io/ProyectoXML](https://davidgs04.github.io/ProyectoXML/)
+[https://erdavid04.github.io/ProyectoXML/](https://erdavid04.github.io/ProyectoXML/)
 
 ## Autor
 
